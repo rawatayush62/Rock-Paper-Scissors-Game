@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+    text-align: center;
+}
+#title-bar{
+    width: 100vw;
+    height: 150px;
+    line-height: 150px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#main-section-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#choices{
+    width: 75vw;
+    display: flex;
+    justify-content: space-around;
+}
+.choice{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+.choice img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /* object-fit: fill; Preserves aspect ratio without distortion */
+}
+.choice:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#result:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#result-container{
+    display: flex;
+    justify-content: center;
+}
+#result{
+    height: 100px;
+    width: 400px;
+    line-height: 100px;
+    background-color: rgb(244, 210, 58);
+    color: aliceblue;
+    font-size: 50px;
+}
+#scorecard{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    margin: 25px;
+}
